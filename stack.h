@@ -15,6 +15,7 @@ public:
 	void Push(T newValue)
 	{
 		Node<T> *n = new Node<T>;
+		top = n;
 		n->data = newValue;
 		n->next = top;
 		top = n;
